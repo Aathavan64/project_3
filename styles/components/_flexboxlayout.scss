@@ -1,0 +1,72 @@
+body {
+    max-width: 1280px;
+}
+
+.noDisplay {
+    display: none;
+}
+
+.noDisplay {
+    display: block;
+}
+
+.introPage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.mainQuestion {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+}
+
+.mainQuestion h1 {
+    margin: auto;
+    background: CHARTREUSE;
+    padding: 10px 20px;
+    border: 1px solid #FFFFFF;
+}
+
+.country {
+    width: 50%;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    display: flex;
+}
+
+.country button {
+    margin: auto;
+    background: chartreuse;
+    border-radius: 0;
+    border: 1px solid black;
+    min-width: 100px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.selectJapan {
+    background-image: url('../images/japanIntro.jpg');
+}
+
+.selectBrazil {
+    background-image: url('../images/brazilIntro.jpg');
+
+}
+
+.selectIndia {
+    background-image: url('../images/indiaIntro.jpg')
+}
+
+.selectVietnam {
+    background-image: url('../images/vietnamIntro.jpg')
+}
+
