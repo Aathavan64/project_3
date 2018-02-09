@@ -6,44 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Merriweather:400,700" rel="stylesheet">
 </head>
 <body>
-    <section class="introPage display">
-        <div class="mainQuestion">
-            <h1>Where would you like to travel to?</h1>
-        </div>
-        <div class="country">
-            <div class="buttonHolder"><button class="japanButton">Japan</button></div>
-            
-            <div class="japanSelect grayScale"></div>
-        </div>
-        <div class="country">
-            <div class="buttonHolder">
-                <button class="brazilButton">Brazil</button>
-            </div>
-        
-            <div class="brazilSelect grayScale"></div>
-        </div>
-        <div class="country">
-            <div class="buttonHolder">
-                <button class="indiaButton">Brazil</button>
-            </div>
-        
-            <div class="indiaSelect grayScale"></div>
-        </div>
-        <div class="country">
-            <div class="buttonHolder">
-                <button class="vietnamButton">Brazil</button>
-            </div>
-        
-            <div class="vietnamSelect grayScale"></div>
-        </div>
-    </section>
-    <section class="brazil noDisplay">
+    <section class="brazil">
+        <header class="brazilHeader">
+            <img class="flag" src="images/brazilFlag.png" alt="">
+        </header>
         <main>
-            <div class="dish">
+            <div class="wrapper dish">
                 <img src="images/brazildish.png" alt="">
+                <h2>Brazilian Steak House</h2>
             </div>
             <div class="progressBar">
                 <button>1</button>
@@ -63,8 +35,7 @@
                 <div class="answeredRight noDisplay">
                     <h3>Correct!</h3>
                     <p>Alot of people go crazy at the salad bar and fill up there. Instead of this you should mostly be eating the
-                        meat.
-                    </p>
+                        meat.</p>
                 </div>
                 <div class="answeredWrong noDisplay">
                     <h3>Seriously?</h3>
@@ -120,6 +91,112 @@
                 <div class="answeredWrong noDisplay">
                     <h3>Act like you've been somewhere before....</h3>
                     <p>Grab the piece of meat with the provided tongs as your waiter carves the meat. You can assist him in this
+                        way.</p>
+                </div>
+            </div>
+            <div class="wrapper moreMeatQuestion noDisplay">
+                <h2>Now that you've gotten your meat should your leave your card on green, so that other waiters bring their rotisery
+                    around to you?</h2>
+                <div class="initalOptions">
+                    <div "wrongOption">
+                        <h3>This place is AYCE, you bet I'm going to get my money's worth</h3>
+                    </div>
+                    <div class="rightOption">
+                        <h3>I should flip it over to red, until I'm finished whats on my plate</h3>
+                    </div>
+                </div>
+                <div class="answeredRight">
+                    <h3>Good!</h3>
+                    <p>This place might be AYCE, but you should also enjoy your food. Take your time and finish what is is on your
+                        plate before requesting more.</p>
+                </div>
+                <div class="answeredWrong">
+                    <h3>Calm down there Kirby</h3>
+                    <p>This might be AYCE, but show some class for god sakes. Flip the card to red. Take your time to enjoy the
+                        food on your plate before, fliping it back to green</p>
+                </div>
+            </div>
+        </main>
+    </section>
+    <section class="india noDisplay">
+        <header class="indiaHeader">
+            <img class="flag" src="images/inidaFlag.jpeg" alt="">
+        </header>
+        <main>
+            <div class="wrapper dish">
+                <img src="images/indiadish.png" alt="">
+                <h2>Paper Dosa</h2>
+            </div>
+            <div class="progressBar">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+            </div>
+            <div class="wrapper sauceQuestion">
+                <h2>Look all these sauces! Lets drench this f-r and make a giant soggy mess!</h2>
+                <div class="initalOptions">
+                    <button class="wrongOption option display">
+                        <p>I mean it can only get better with more flavours right?</p>
+                    </button>
+                    <button class="rightOption option display">
+                        <p>Lets slow down, try to eat this properly</p>
+                    </button>
+                </div>
+                <div class="answeredRight noDisplay">
+                    <h3>Right you are!</h3>
+                    <p>We will get to the sauces later, but Dosa isn't something you eat in one go.
+                    </p>
+                </div>
+                <div class="answeredWrong noDisplay">
+                    <h3>.......</h3>
+                    <p>This isn't your soggy sunday morning pancakes fool, its not supposed to be soggy. Chill with the sauces until later.</p>
+                </div>
+            </div>
+            <button class="sauceQuestionNext nextQuestion noDisplay">
+                <p>Next Question</p>
+            </button>
+            <div class="wrapper dippingQuestion noDisplay ">
+                <h2>So now you have have a small piece of Dosa ready to go. Should we dip it in all the sauces like a cho-cho train?</h2>
+                <div class="initalOptions">
+                    <button class="wrongOption option display">
+                        <p>We should see what they taste like all together!</p>
+                    </button>
+                    <button class="rightOption option display">
+                        <p>How about we just taste them one at a time individually?</p>
+                    </button>
+                </div>
+                <div class="answeredRight noDisplay">
+                    <h3>Good!</h3>
+                    <p>It will make things much easier for the carver if you assist him by holding the piece as he cuts it, so it doesn't just fall
+                    on the table.</p>
+                </div>
+                <div class="answeredWrong noDisplay">
+                    <h3>Act like you've been somewhere before....</h3>
+                    <p>Grab the piece of meat with the provided tongs as your waiter carves the meat. You can assist him in this way.</p>
+                </div>
+            </div>
+            <button class="dippingQuestionNext nextQuestion noDisplay">
+                <p>Next Question</p>
+            </button>
+            <div class="wrapper utensilQuestion noDisplay">
+                <h2>Alright you finished your apitizers! The waiter comes by with some rotisery of meat and carves off a piece for
+                    you. Should you watch in awe as cuts off a piece for you? </h2>
+                <div class="initalOptions">
+                    <button class="wrongOption option display">
+                        <p>Yea keeep going till I say stop fam!</p>
+                    </button>
+                    <button class="rightOption option display">
+                        <p>Grab the piece with your tongs as he carves it off.</p>
+                    </button>
+                </div>
+                <div class="answeredRight noDisplay">
+                    <h3>Thanks for being polite!</h3>
+                    <p>It will make things much easier for the carver if you assist him by holding the piece as he cuts it, so it
+                        doesn't just fall on the table.</p>
+                </div>
+                <div class="answeredWrong noDisplay">
+                    <h3>Act like you've been somewhere before....</h3>
+                    <p>Grab the piece of meat with the provided tongs as your waiter carves the meat. You can assist him in this
                         way.
                     </p>
                 </div>
@@ -148,103 +225,9 @@
             </div>
         </main>
     </section>
-    <section class="india">
-        <header>
-            <h1>India</h1>
-        </header>
-        <main>
-            <div class="wrapper dish">
-                <h2>Paper Dosa</h2>
-                <div class="progressBar">
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
-                </div>
-            </div>
-            <div class="wrapper sauceQuestion">
-                <h2>Look all these sauces! Lets drench this f-r and make a giant soggy mess!</h2>
-                <div class="initalOptions">
-                    <div "wrongOption">
-                        <h3>I mean it can only get better with more flavours right?</h3>
-                    </div>
-                    <div class="rightOption">
-                        <h3>Lets slow down, try to eat this properly</h3>
-                    </div>
-                </div>
-                <div class="answeredRight">
-                    <h3>Right you are!</h3>
-                    <p>We will get to the sauces later, but Dosa isn't something you eat in one go.</p>
-                </div>
-                <div class="answeredWrong">
-                    <h3>......</h3>
-                    <p>This isn't your soggy sunday morning pancakes fool, its not supposed to be soggy. Chill with the sauces until later.</p>
-                </div>
-            </div>
-            <div class="wrapper utensilQuestion">
-                <h2>Ok how do we go about tackling this giant dish?</h2>
-                <div class="initalOptions">
-                    <div "wrongOption">
-                        <h3>Cut it up!</h3>
-                    </div>
-                    <div class="rightOption">
-                        <h3>We probably dont need utensils for this, it might be better to use your hands!</h3>
-                    </div>
-                </div>
-                <div class="answeredRight">
-                    <h3>Wow! Nice guess</h3>
-                    <p>Alot of Indian foods are meant to be eaten by hand! I hope you propely washed them before sitting down. Break off a small piece, for an extra challenge try to do this with just one hand!</p>
-                </div>
-                <div class="answeredWrong">
-                    <h3>Do you eat Bannanna's with a fork and knife?</h3>
-                    <p>You will actually not need utensils for this meal. Most indian dishes are meant to be eaten with your hands! So roll up your sleeves! Break off a small piece, for an extra challenge try to do this with just one hand!</p>
-                </div>
-            </div>
-            <div class="wrapper dippingQuestion">
-                <h2>So now you have have a small piece of Dosa ready to go. Should we dip it in all the sauces like a cho-cho train?</h2>
-                <div class="initalOptions">
-                    <div "wrongOption">
-                        <h3>We should see what they taste like all together!</h3>
-                    </div>
-                    <div class="rightOption">
-                        <h3>How about we just taste them one at a time?</h3>
-                    </div>
-                </div>
-                <div class="answeredRight">
-                    <h3>Good!</h3>
-                    <p>It will make things much easier for the carver if you assist him by holding the piece as he cuts it, so it
-                        doesn't just fall on the table.</p>
-                </div>
-                <div class="answeredWrong">
-                    <h3>Act like you've been somewhere before....</h3>
-                    <p>Grab the piece of meat with the provided tongs as your waiter carves the meat. You can assist him in this
-                        way.</p>
-                </div>
-            </div>
-            <div class="wrapper moreMeatQuestion">
-                <h2>Now that you've gotten your meat should your leave your card on green, so that other waiters bring their rotisery
-                    around to you?</h2>
-                <div class="initalOptions">
-                    <div "wrongOption">
-                        <h3>This place is AYCE, you bet I'm going to get my money's worth</h3>
-                    </div>
-                    <div class="rightOption">
-                        <h3>I should flip it over to red, until I'm finished whats on my plate</h3>
-                    </div>
-                </div>
-                <div class="answeredRight">
-                    <h3>Good!</h3>
-                    <p>This place might be AYCE, but you should also enjoy your food. Take your time and finish what is is on your
-                        plate before requesting more.</p>
-                </div>
-                <div class="answeredWrong">
-                    <h3>Calm down there Kirby</h3>
-                    <p>This might be AYCE, but show some class for god sakes. Flip the card to red. Take your time to enjoy the
-                        food on your plate before, fliping it back to green</p>
-                </div>
-            </div>
-        </main>
-    </section>
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+
     <script src="scripts/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,144 @@
+body {
+  max-width: 1280px;
+  background-color: #ffffff; }
+
+button {
+  border: none; }
+
+.display {
+  display: block; }
+
+.introPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative; }
+
+.mainQuestion {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.mainQuestion h1 {
+  margin: auto; }
+
+.mainQuestion h1 {
+  margin: auto;
+  background: CHARTREUSE;
+  padding: 10px 20px;
+  border: 1px solid #FFFFFF; }
+
+.country {
+  width: 50%;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.country button {
+  margin: auto;
+  background: blue;
+  border-radius: 0;
+  border: 1px solid black;
+  min-width: 100px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 9; }
+
+.selectJapan {
+  background-image: url("../images/japanIntro.jpg"); }
+
+.selectBrazil {
+  background-image: url("../images/brazilIntro.jpg"); }
+
+.selectIndia {
+  background-image: url("../images/indiaIntro.jpg"); }
+
+.selectVietnam {
+  background-image: url("../images/vietnamIntro.jpg"); }
+
+.brazilHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 300px;
+  background-image: url("../images/brazilLanding.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.brazilHeader .flag {
+  margin: auto;
+  background-image: url("../images/brazilFlag.png");
+  max-width: 200px; }
+
+.dish {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 1000px;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 100px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.dish img,
+.dish h2 {
+  width: 40%; }
+
+.initalOptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 1000px;
+  margin: 0 auto; }
+
+.option {
+  width: 200px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50%; }
+
+.option p {
+  margin: auto; }
+
+.nextQuestion {
+  margin: 0 auto;
+  width: 200px;
+  height: 100px;
+  background: red;
+  display: block; }
+
+.noDisplay {
+  display: none; }

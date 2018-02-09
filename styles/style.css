@@ -132,14 +132,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-body {
-  max-width: 1280px; }
-
-.noDisplay {
-  display: none; }
-
-.noDisplay {
-  display: block; }
+.introPage {
+  font-family: 'Merriweather', serif; }
 
 .introPage {
   display: -webkit-box;
@@ -165,6 +159,10 @@ body {
 
 .mainQuestion h1 {
   margin: auto;
+  z-index: 99; }
+
+.mainQuestion h1 {
+  margin: auto;
   background: CHARTREUSE;
   padding: 10px 20px;
   border: 1px solid #FFFFFF; }
@@ -172,34 +170,79 @@ body {
 .country {
   width: 50%;
   height: 50vh;
-  background-position: center;
-  background-size: cover;
-  background-repeat: repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative; }
+
+.grayScale {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+
+.grayScaleOff {
+  -webkit-filter: none;
+  filter: none; }
+
+.buttonHolder {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
 .country button {
   margin: auto;
-  background: chartreuse;
-  border-radius: 0;
-  border: 1px solid black;
-  min-width: 100px;
+  background: blue;
+  border-radius: 3px;
+  padding: 16px 65px;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px; }
+  z-index: 9;
+  font-size: 1.125rem;
+  border: none;
+  -webkit-filter: none;
+  filter: none; }
 
-.selectJapan {
-  background-image: url("../images/japanIntro.jpg"); }
+.japanSelect {
+  background-image: url("../images/japanIntro.jpg");
+  width: 100%;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat; }
+
+.brazilSelect {
+  background-image: url("../images/brazilIntro.jpg");
+  width: 100%;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat; }
+
+.indiaSelect {
+  background-image: url("../images/indiaIntro.jpg");
+  width: 100%;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat; }
+
+.vietnamSelect {
+  background-image: url("../images/vietnamIntro.jpg");
+  width: 100%;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat; }
 
 .selectBrazil {
   background-image: url("../images/brazilIntro.jpg"); }
 
-.selectIndia {
-  background-image: url("../images/indiaIntro.jpg"); }
+body {
+  color: red; }
 
-.selectVietnam {
-  background-image: url("../images/vietnamIntro.jpg"); }
-
-.introPage {
-  font-family: 'Merriweather', serif; }
+.option {
+  background-color: #7fff00;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0.69'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='0.69'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0.69'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='0.69'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%2366cc00' fill-opacity='0.69'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.69'%3E%3Cpolygon fill='url(%23a)' points='100%2C30 0%2C0 200%2C0'/%3E%3Cpolygon fill='url(%23b)' points='100%2C100 0%2C130 0%2C100 200%2C100 200%2C130'/%3E%3C/g%3E%3C/svg%3E"); }
