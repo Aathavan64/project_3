@@ -1,6 +1,27 @@
+.saladQuestion,
+.apitizerQuestion,
+.meatQuestion {
+    @include questionSectionLayout;
+}
 
+.dish,
+.question {
+    @include dishQuestionLayout;
+}
 
-.selectBrazil {
-    background-image: url('../images/brazilIntro.jpg');
+.dish img {
+    @include dishImgWidth;
+}
 
+.question {
+    @include questionLayout;
+}
+
+.initialOptions {
+    @include initialOptionsLayout;
+    
+}
+
+.option{
+    @include optionButtonStyling;
 }

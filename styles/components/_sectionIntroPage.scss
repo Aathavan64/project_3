@@ -21,9 +21,8 @@
 
 .mainQuestion h1 {
     margin: auto;
-    background: CHARTREUSE;
     padding: 10px 20px;
-    border: 1px solid #FFFFFF;
+    
 }
 
 .country {
@@ -41,6 +40,15 @@
     filter: none;
 }
 
+.mainQuestion h1,
+.japanButton,
+.brazilButton,
+.vietnamButton,
+.indiaButton {
+    background-color: #18c57e;
+    color: #e9e8d5;
+}
+
 .buttonHolder {
     position: absolute;
     top: 0;
@@ -52,7 +60,6 @@
 
 .country button {
     margin: auto;
-    background: blue;
     border-radius: 3px;
     padding: 16px 65px;
     text-align: center;

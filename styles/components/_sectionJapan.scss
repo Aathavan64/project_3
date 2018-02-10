@@ -1,3 +1,27 @@
-body {
-    color: red;
+.riceQuestion,
+.wasabiQuestion,
+.soysauceQuestion,
+.gingerQuestion {
+    @include questionSectionLayout;
+}
+
+.dish,
+.question {
+    @include dishQuestionLayout;
+}
+
+.dish img {
+    @include dishImgWidth;
+}
+
+.question {
+    @include questionLayout;
+}
+
+.initialOptions {
+    @include initialOptionsLayout;
+}
+
+.option{
+    @include optionButtonStyling;
 }

@@ -1,0 +1,26 @@
+.sauceQuestion,
+.utensilQuestion,
+.dippingQuestion {
+    @include questionSectionLayout;
+}
+
+.dish,
+.question {
+    @include dishQuestionLayout;
+}
+
+.dish img {
+    @include dishImgWidth;
+}
+
+.question {
+    @include questionLayout;
+}
+
+.initialOptions {
+    @include initialOptionsLayout;
+}
+
+.option{
+    @include optionButtonStyling;
+}

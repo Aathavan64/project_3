@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Merriweather:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English:400,400i|Josefin+Sans:400,600,700|Playfair+Display:400,700|Vollkorn:400,600,700"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700|Vidaloka" rel="stylesheet">
 </head>
 <body>
-    <section class="introPage display">
+    <section class="introPage noDisplay">
         <div class="mainQuestion">
             <h1>Where would you like to travel to?</h1>
         </div>
@@ -27,222 +29,381 @@
         </div>
         <div class="country">
             <div class="buttonHolder">
-                <button class="indiaButton">Brazil</button>
+                <button class="indiaButton">India</button>
             </div>
         
             <div class="indiaSelect grayScale"></div>
         </div>
         <div class="country">
             <div class="buttonHolder">
-                <button class="vietnamButton">Brazil</button>
+                <button class="vietnamButton">Vietnam</button>
             </div>
         
             <div class="vietnamSelect grayScale"></div>
         </div>
     </section>
-    <section class="brazil noDisplay">
+    <section class="brazil Display">
         <main>
-            <div class="dish">
-                <img src="images/brazildish.png" alt="">
-            </div>
-            <div class="progressBar">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-            </div>
             <div class="wrapper saladQuestion">
-                <h2>Salad Bar?! F-Yes!!!</h2>
-                <div class="initalOptions">
-                    <button class="wrongOption option display">
-                        <p>Yes!</p>
-                    </button>
-                    <button class="rightOption option display">
-                        <p>No!</p>
-                    </button>
+                <div class="dish">
+                    <img src="images/brazildish.png" alt="">
                 </div>
-                <div class="answeredRight noDisplay">
-                    <h3>Correct!</h3>
-                    <p>Alot of people go crazy at the salad bar and fill up there. Instead of this you should mostly be eating the
-                        meat.
-                    </p>
-                </div>
-                <div class="answeredWrong noDisplay">
-                    <h3>Seriously?</h3>
-                    <p>The whole reason you came here was for
-                        <em>Steak!</em> hence the name Brazilian
-                        <em>Steak</em> House! You're not a bunny rabbit chill with the salads</p>
+                <div class="question">
+                    <h2>Salad Bar?! F-Yes!!!</h2>
+                    <div class="initialOptions">
+                        <button class="wrongOption option display">
+                            <p>Yes!</p>
+                        </button>
+                        <button class="rightOption option display">
+                            <p>No!</p>
+                        </button>
+                    </div>
+                    <div class="answeredRight noDisplay">
+                        <h3>Correct!</h3>
+                        <p>Alot of people go crazy at the salad bar and fill up there. Instead of this you should mostly be eating the
+                            meat.
+                        </p>
+                    </div>
+                    <div class="answeredWrong noDisplay">
+                        <h3>Seriously?</h3>
+                        <p>The whole reason you came here was for
+                            <em>Steak!</em> hence the name Brazilian
+                            <em>Steak</em> House! You're not a bunny rabbit chill with the salads</p>
+                    </div>
                 </div>
             </div>
             <button class="saladQuestionNext nextQuestion noDisplay">
                 <p>Next Question</p>
             </button>
-            <div class="wrapper apitizerQuestion noDisplay ">
-                <h2>Now how should you order your Apitizers?</h2>
-                <div class="initalOptions">
-                    <button class="wrongOption option display">
-                        <p>Yell it, and hope some one hears you.</p>
-                    </button>
-                    <button class="rightOption option display">
-                        <p>Flip over your placement card to green</p>
-                    </button>
+            <div class="wrapper apitizerQuestion noDisplay">
+                <div class="dish">
+                    <img src="images/brazildish.png" alt="">
                 </div>
-                <div class="answeredRight noDisplay">
-                    <h3>Yes!</h3>
-                    <p>When you flip over your card to green, it indicates to the waiter that you are ready to start. They will
-                        then bring over your starters. As well when you are ready to get some more meat the carver will come
-                        to you if your card is flipped over to green.</p>
-                </div>
-                <div class="answeredWrong noDisplay">
-                    <h3>This is just sad</h3>
-                    <p>You're at a steakhouse, not a jungle. Politley flip your card over to green, this will let waiter know you
-                        are ready for starters.</p>
+                <div class="question">
+                    <h2>Now how should you order your Apitizers?</h2>
+                    <div class="initialOptions">
+                        <button class="wrongOption option display">
+                            <p>Shout it</p>
+                        </button>
+                        <button class="rightOption option display">
+                            <p>Flip your card on green</p>
+                        </button>
+                    </div>
+                    <div class="answeredRight noDisplay">
+                        <h3>Yes!</h3>
+                        <p>When you flip over your card to green, it indicates to the waiter that you are ready to start. They will then
+                            bring over your starters. As well when you are ready to get some more meat the carver will come to you if
+                            your card is flipped over to green.
+                        </p>
+                    </div>
+                    <div class="answeredWrong noDisplay">
+                        <h3>This is just sad</h3>
+                        <p>You're at a steakhouse, not a jungle. Politley flip your card over to green, this will let waiter know you are
+                            ready for starters.blahlah
+                        </p>
+                    </div>
                 </div>
             </div>
             <button class="apitizerQuestionNext nextQuestion noDisplay">
                 <p>Next Question</p>
             </button>
-            <div class="wrapper meatQuestion noDisplay">
-                <h2>Alright you finished your apitizers! The waiter comes by with some rotisery of meat and carves off a piece for
-                    you. Should you watch in awe as cuts off a piece for you? </h2>
-                <div class="initalOptions">
-                    <button class="wrongOption option display">
-                        <p>Yea keeep going till I say stop fam!</p>
-                    </button>
-                    <button class="rightOption option display">
-                        <p>Grab the piece with your tongs as he carves it off.</p>
-                    </button>
+            <div class="wrapper meatQuestion">
+                <div class="dish">
+                    <img src="images/brazildish.png" alt="">
                 </div>
-                <div class="answeredRight noDisplay">
-                    <h3>Thanks for being polite!</h3>
-                    <p>It will make things much easier for the carver if you assist him by holding the piece as he cuts it, so it
-                        doesn't just fall on the table.</p>
-                </div>
-                <div class="answeredWrong noDisplay">
-                    <h3>Act like you've been somewhere before....</h3>
-                    <p>Grab the piece of meat with the provided tongs as your waiter carves the meat. You can assist him in this
-                        way.
-                    </p>
+                <div class="question">
+                    <h2>Alright you finished your apitizers! The waiter comes by with some rotisery of meat and carves off a piece for you.
+                        Should you watch in awe as cuts off a piece for you?</h2>
+                    <div class="initialOptions">
+                        <button class="wrongOption option display">
+                            <p>Yea!Keep carving fam!</p>
+                        </button>
+                        <button class="rightOption option display">
+                            <p>Grab the piece with your tongs as he carves it off.</p>
+                        </button>
+                    </div>
+                    <div class="answeredRight noDisplay">
+                        <h3>It will make things much easier for the carver if you assist him by holding the piece as he cuts it, so it doesn't
+                            just fall on the table.
+                            </p>
+                    </div>
+                    <div class="answeredWrong noDisplay">
+                        <h3>Act like you've been somewhere before....</h3>
+                        <p>Grab the piece of meat with the provided tongs as your waiter carves the meat. You can assist him in this way.</p>
+                    </div>
                 </div>
             </div>
-            <div class="wrapper moreMeatQuestion noDisplay">
-                <h2>Now that you've gotten your meat should your leave your card on green, so that other waiters bring their rotisery
-                    around to you?</h2>
-                <div class="initalOptions">
-                    <div "wrongOption">
-                        <h3>This place is AYCE, you bet I'm going to get my money's worth</h3>
+            <button class="meatQuestionNext nextQuestion noDisplay">
+                <p>Next Question</p>
+            </button>
+        </main>
+    </section>
+    <section class="india">
+        <main>
+            <div class="wrapper sauceQuestion">
+                <div class="dish">
+                    <img src="images/brazildish.png" alt="">
+                </div>
+                <div class="question">
+                    <h2>Look all these sauces! Lets drench this f-r and make a giant soggy mess!</h2>
+                    <div class="initialOptions">
+                        <button class="wrongOption option display">
+                            <p>I mean it can only get better with more flavours right?</p>
+                        </button>
+                        <button class="rightOption option display">
+                            <p>Lets slow down, try to eat this properly</p>
+                        </button>
                     </div>
-                    <div class="rightOption">
-                        <h3>I should flip it over to red, until I'm finished whats on my plate</h3>
+                    <div class="answeredRight noDisplay">
+                        <h3>Right you are!</h3>
+                        <p>We will get to the sauces later, but Dosa isn't something you eat in one go.
+                        </p>
+                    </div>
+                    <div class="answeredWrong noDisplay">
+                        <h3>......</h3>
+                        <p>This isn't your soggy sunday morning pancakes fool, its not supposed to be soggy. Chill with the sauces until
+                            later.</p>
                     </div>
                 </div>
-                <div class="answeredRight">
-                    <h3>Good!</h3>
-                    <p>This place might be AYCE, but you should also enjoy your food. Take your time and finish what is is on your
-                        plate before requesting more.</p>
+            </div>
+            <div class="wrapper utensilQuestion">
+                <div class="dish">
+                    <img src="images/brazildish.png" alt="">
                 </div>
-                <div class="answeredWrong">
-                    <h3>Calm down there Kirby</h3>
-                    <p>This might be AYCE, but show some class for god sakes. Flip the card to red. Take your time to enjoy the
-                        food on your plate before, fliping it back to green</p>
+                <div class="question">
+                    <h2>Ok how do we go about tackling this giant dish?</h2>
+                    <div class="initialOptions">
+                        <button class="wrongOption option display">
+                            <p>Cut it up!</p>
+                        </button>
+                        <button class="rightOption option display">
+                            <p>We probably dont need utensils for this, it might be better to use your hands!</p>
+                        </button>
+                    </div>
+                    <div class="answeredRight noDisplay">
+                        <h3>Wow! Nice guess</h3>
+                        <p>Alot of Indian foods are meant to be eaten by hand! I hope you propely washed them before sitting down. Break
+                            off a small piece, for an extra challenge try to do this with just one hand!
+                        </p>
+                    </div>
+                    <div class="answeredWrong noDisplay">
+                        <h3>Do you eat Bannanna's with a fork and knife?</h3>
+                        <p>You will actually not need utensils for this meal. Most indian dishes are meant to be eaten with your hands!
+                            So roll up your sleeves! Break off a small piece, for an extra challenge try to do this with just one hand!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper dippingQuestion">
+                <div class="dish">
+                    <img src="images/brazildish.png" alt="">
+                </div>
+                <div class="question">
+                    <h2>So now you have have a small piece of Dosa ready to go. Should we dip it in all the sauces like a cho-cho train?</h2>
+                    <div class="initialOptions">
+                        <button class="wrongOption option display">
+                            <p>We should see what they taste like all together!</p>
+                        </button>
+                        <button class="rightOption option display">
+                            <p>How about we just taste them one at a time?</p>
+                        </button>
+                    </div>
+                    <div class="answeredRight noDisplay">
+                        <h3>Good!</h3>
+                        <p>The sauces are not meant to be mixed. They each have their own unique flavour. </p>
+                    </div>
+                    <div class="answeredWrong noDisplay">
+                        <h3>-.-'</h3>
+                        <p>You will ruin the flavour of the sauce if you do that. Instead try to enjoy each one by themselves</p>
+                    </div>
                 </div>
             </div>
         </main>
     </section>
-    <section class="india">
-        <header>
-            <h1>India</h1>
-        </header>
-        <main>
-            <div class="wrapper dish">
-                <h2>Paper Dosa</h2>
-                <div class="progressBar">
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
-                </div>
+    <section class="vietnam">
+        <div class="wrapper flavourSauceQuestion">
+            <div class="dish">
+                <img src="images/brazildish.png" alt="">
             </div>
-            <div class="wrapper sauceQuestion">
-                <h2>Look all these sauces! Lets drench this f-r and make a giant soggy mess!</h2>
-                <div class="initalOptions">
-                    <div "wrongOption">
-                        <h3>I mean it can only get better with more flavours right?</h3>
-                    </div>
-                    <div class="rightOption">
-                        <h3>Lets slow down, try to eat this properly</h3>
-                    </div>
+            <div class="question">
+                <h2>When your Pho comes out we should definitely dump all the hoisin and Siracha sauce in it right?</h2>
+                <div class="initialOptions">
+                    <button class="wrongOption option display">
+                        <p>Wel yea? It gonna taste horrible if we dont?</p>
+                    </button>
+                    <button class="rightOption option display">
+                        <p>How about we just try the soup first</p>
+                    </button>
                 </div>
-                <div class="answeredRight">
-                    <h3>Right you are!</h3>
-                    <p>We will get to the sauces later, but Dosa isn't something you eat in one go.</p>
-                </div>
-                <div class="answeredWrong">
-                    <h3>......</h3>
-                    <p>This isn't your soggy sunday morning pancakes fool, its not supposed to be soggy. Chill with the sauces until later.</p>
-                </div>
-            </div>
-            <div class="wrapper utensilQuestion">
-                <h2>Ok how do we go about tackling this giant dish?</h2>
-                <div class="initalOptions">
-                    <div "wrongOption">
-                        <h3>Cut it up!</h3>
-                    </div>
-                    <div class="rightOption">
-                        <h3>We probably dont need utensils for this, it might be better to use your hands!</h3>
-                    </div>
-                </div>
-                <div class="answeredRight">
-                    <h3>Wow! Nice guess</h3>
-                    <p>Alot of Indian foods are meant to be eaten by hand! I hope you propely washed them before sitting down. Break off a small piece, for an extra challenge try to do this with just one hand!</p>
-                </div>
-                <div class="answeredWrong">
-                    <h3>Do you eat Bannanna's with a fork and knife?</h3>
-                    <p>You will actually not need utensils for this meal. Most indian dishes are meant to be eaten with your hands! So roll up your sleeves! Break off a small piece, for an extra challenge try to do this with just one hand!</p>
-                </div>
-            </div>
-            <div class="wrapper dippingQuestion">
-                <h2>So now you have have a small piece of Dosa ready to go. Should we dip it in all the sauces like a cho-cho train?</h2>
-                <div class="initalOptions">
-                    <div "wrongOption">
-                        <h3>We should see what they taste like all together!</h3>
-                    </div>
-                    <div class="rightOption">
-                        <h3>How about we just taste them one at a time?</h3>
-                    </div>
-                </div>
-                <div class="answeredRight">
+                <div class="answeredRight noDisplay">
                     <h3>Good!</h3>
-                    <p>It will make things much easier for the carver if you assist him by holding the piece as he cuts it, so it
-                        doesn't just fall on the table.</p>
+                    <p>The only way you will be able to tell if a Pho is good is by trying the broth. Take some with your soup spoon and taste it, it should have a deep bone broth taste. As well you should place your sauces in a seperate bowl on the side and dip your meats into there.</p>
                 </div>
-                <div class="answeredWrong">
-                    <h3>Act like you've been somewhere before....</h3>
-                    <p>Grab the piece of meat with the provided tongs as your waiter carves the meat. You can assist him in this
-                        way.</p>
+                <div class="answeredWrong noDisplay">
+                    <h3>-.-'</h3>
+                    <p>You will ruin the flavour of the sauce if you do that. Instead try to enjoy each one by themselves. Instead of putting your sauces directly in the bowl, place in a side dish, and dip the meat directly into it.</p>
                 </div>
             </div>
-            <div class="wrapper moreMeatQuestion">
-                <h2>Now that you've gotten your meat should your leave your card on green, so that other waiters bring their rotisery
-                    around to you?</h2>
-                <div class="initalOptions">
-                    <div "wrongOption">
-                        <h3>This place is AYCE, you bet I'm going to get my money's worth</h3>
-                    </div>
-                    <div class="rightOption">
-                        <h3>I should flip it over to red, until I'm finished whats on my plate</h3>
-                    </div>
+        </div>
+        <div class="wrapper basilQuestion">
+            <div class="dish">
+                <img src="images/brazildish.png" alt="">
+            </div>
+            <div class="question">
+                <h2>Now that you have tasted it, should you go nuts with </h2>
+                <div class="initialOptions">
+                    <button class="wrongOption option display">
+                        <p>Wel yea? It gonna taste horrible if we dont?</p>
+                    </button>
+                    <button class="rightOption option display">
+                        <p>How about we just try the soup first</p>
+                    </button>
                 </div>
-                <div class="answeredRight">
+                <div class="answeredRight noDisplay">
                     <h3>Good!</h3>
-                    <p>This place might be AYCE, but you should also enjoy your food. Take your time and finish what is is on your
-                        plate before requesting more.</p>
+                    <p>The only way you will be able to tell if a Pho is good is by trying the broth. Take some with your soup spoon
+                        and taste it, it should have a deep bone broth taste.</p>
                 </div>
-                <div class="answeredWrong">
-                    <h3>Calm down there Kirby</h3>
-                    <p>This might be AYCE, but show some class for god sakes. Flip the card to red. Take your time to enjoy the
-                        food on your plate before, fliping it back to green</p>
+                <div class="answeredWrong noDisplay">
+                    <h3>-.-'</h3>
+                    <p>You will ruin the flavour of the sauce if you do that. Instead try to enjoy each one by themselves</p>
                 </div>
             </div>
-        </main>
+        </div>
+        <div class="wrapper spoonQuestion">
+            <div class="dish">
+                <img src="images/brazildish.png" alt="">
+            </div>
+            <div class="question">
+                <h2>When your Pho comes out we should definitely dump all the hoisin and Siracha sauce in it right?</h2>
+                <div class="initialOptions">
+                    <button class="wrongOption option display">
+                        <p>Wel yea? It gonna taste horrible if we dont?</p>
+                    </button>
+                    <button class="rightOption option display">
+                        <p>How about we just try the soup first</p>
+                    </button>
+                </div>
+                <div class="answeredRight noDisplay">
+                    <h3>Good!</h3>
+                    <p>The only way you will be able to tell if a Pho is good is by trying the broth. Take some with your soup spoon
+                        and taste it, it should have a deep bone broth taste. As well you should place your sauces in a seperate
+                        bowl on the side and dip your meats into there.</p>
+                </div>
+                <div class="answeredWrong noDisplay">
+                    <h3>-.-'</h3>
+                    <p>You will ruin the flavour of the sauce if you do that. Instead try to enjoy each one by themselves. Instead of
+                        putting your sauces directly in the bowl, place in a side dish, and dip the meat directly into it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="japan">
+        <div class="wrapper riceQuestion">
+            <div class="dish">
+                <img src="images/brazildish.png" alt="">
+            </div>
+            <div class="question">
+                <h2>When your Pho comes out we should definitely dump all the hoisin and Siracha sauce in it right?</h2>
+                <div class="initialOptions">
+                    <button class="wrongOption option display">
+                        <p>Wel yea? It gonna taste horrible if we dont?</p>
+                    </button>
+                    <button class="rightOption option display">
+                        <p>How about we just try the soup first</p>
+                    </button>
+                </div>
+                <div class="answeredRight noDisplay">
+                    <h3>Good!</h3>
+                    <p>The only way you will be able to tell if a Pho is good is by trying the broth. Take some with your soup spoon
+                        and taste it, it should have a deep bone broth taste. As well you should place your sauces in a seperate
+                        bowl on the side and dip your meats into there.</p>
+                </div>
+                <div class="answeredWrong noDisplay">
+                    <h3>-.-'</h3>
+                    <p>You will ruin the flavour of the sauce if you do that. Instead try to enjoy each one by themselves. Instead
+                        of putting your sauces directly in the bowl, place in a side dish, and dip the meat directly into it.</p>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper wasabiQuestion">
+            <div class="dish">
+                <img src="images/brazildish.png" alt="">
+            </div>
+            <div class="question">
+                <h2>Now that you have tasted it, should you go nuts with </h2>
+                <div class="initialOptions">
+                    <button class="wrongOption option display">
+                        <p>Wel yea? It gonna taste horrible if we dont?</p>
+                    </button>
+                    <button class="rightOption option display">
+                        <p>How about we just try the soup first</p>
+                    </button>
+                </div>
+                <div class="answeredRight noDisplay">
+                    <h3>Good!</h3>
+                    <p>The only way you will be able to tell if a Pho is good is by trying the broth. Take some with your soup spoon
+                        and taste it, it should have a deep bone broth taste.</p>
+                </div>
+                <div class="answeredWrong noDisplay">
+                    <h3>-.-'</h3>
+                    <p>You will ruin the flavour of the sauce if you do that. Instead try to enjoy each one by themselves</p>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper soysauceQuestion">
+            <div class="dish">
+                <img src="images/brazildish.png" alt="">
+            </div>
+            <div class="question">
+                <h2>When your Pho comes out we should definitely dump all the hoisin and Siracha sauce in it right?</h2>
+                <div class="initialOptions">
+                    <button class="wrongOption option display">
+                        <p>Wel yea? It gonna taste horrible if we dont?</p>
+                    </button>
+                    <button class="rightOption option display">
+                        <p>How about we just try the soup first</p>
+                    </button>
+                </div>
+                <div class="answeredRight noDisplay">
+                    <h3>Good!</h3>
+                    <p>The only way you will be able to tell if a Pho is good is by trying the broth. Take some with your soup spoon
+                        and taste it, it should have a deep bone broth taste. As well you should place your sauces in a seperate
+                        bowl on the side and dip your meats into there.</p>
+                </div>
+                <div class="answeredWrong noDisplay">
+                    <h3>-.-'</h3>
+                    <p>You will ruin the flavour of the sauce if you do that. Instead try to enjoy each one by themselves. Instead
+                        of putting your sauces directly in the bowl, place in a side dish, and dip the meat directly into it.</p>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper gingerQuestion">
+            <div class="dish">
+                <img src="images/brazildish.png" alt="">
+            </div>
+            <div class="question">
+                <h2>When your Pho comes out we should definitely dump all the hoisin and Siracha sauce in it right?</h2>
+                <div class="initialOptions">
+                    <button class="wrongOption option display">
+                        <p>Wel yea? It gonna taste horrible if we dont?</p>
+                    </button>
+                    <button class="rightOption option display">
+                        <p>How about we just try the soup first</p>
+                    </button>
+                </div>
+                <div class="answeredRight noDisplay">
+                    <h3>Good!</h3>
+                    <p>The only way you will be able to tell if a Pho is good is by trying the broth. Take some with your soup spoon
+                        and taste it, it should have a deep bone broth taste. As well you should place your sauces in a seperate
+                        bowl on the side and dip your meats into there.</p>
+                </div>
+                <div class="answeredWrong noDisplay">
+                    <h3>-.-'</h3>
+                    <p>You will ruin the flavour of the sauce if you do that. Instead try to enjoy each one by themselves. Instead of
+                        putting your sauces directly in the bowl, place in a side dish, and dip the meat directly into it.</p>
+                </div>
+            </div>
+        </div>
     </section>
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
     <script src="scripts/script.js"></script>
