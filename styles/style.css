@@ -507,3 +507,32 @@ h1, h2, h3, h4, p {
   border: none;
   background-color: #232b2b;
   color: #f4f4f4; }
+
+@media (max-width: 480px) {
+  body {
+    max-width: 450px;
+    margin: 0 auto; }
+  .introPage {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .country {
+    width: 100%; }
+  .japan .wrapper,
+  .brazil .wrapper,
+  .india .wrapper,
+  .vietnam .wrapper {
+    max-width: 450px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .dish,
+  .question {
+    width: 100%; }
+  .initialOptions {
+    width: 90%; } }
+
+.noDisplay {
+  display: none; }

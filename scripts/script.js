@@ -1,28 +1,41 @@
+// THis section for main/home page
+
 function grayScaleToggle(x){
     $(`.${x}Button`).hover(function () {
         $(`.${x}Select`).toggleClass('grayScale grayScaleOff');
     })
-}
+};
 
 grayScaleToggle('japan');
 grayScaleToggle('brazil');
 grayScaleToggle('india');
 grayScaleToggle('vietnam');
 
+function mainPageTransition(x){
+    $(`.${x}Button`).on('click', function () {
+        $('section.introPage').toggleClass('display noDisplay');
+        $(`section.${x}`).toggleClass('noDisplay display');
+    });
+};
+
+mainPageTransition('japan');
+mainPageTransition('brazil');
+mainPageTransition('india');
+mainPageTransition('vietnam');
+
+function goBackHome(x){
+    $(`.${x}BacktoHome`).on('click', function () {
+        $('section.introPage').toggleClass('noDisplay display');
+        $(`section.${x}`).toggleClass('display noDisplay');
+    });
+};
+
+goBackHome('japan');
+goBackHome('brazil');
+goBackHome('india');
+goBackHome('vietnam');
 
 
-$('.brazilButton').on('click', function() {
-    $('section.introPage').toggleClass('display noDisplay');
-    $('section.brazil').toggleClass('noDisplay display');
-});
-
-// $('.indiaButton').on('click', function () {
-//     $('section.introPage').toggleClass('display noDisplay');
-//     $('section.india').toggleClass('noDisplay display');
-// });
-
-
-//THis section for Brazilian Steakhouse flow
 
 function incorrectFunction(x){
     $(`${x} .wrongOption`).on('click', function () {
@@ -31,7 +44,7 @@ function incorrectFunction(x){
         $(`${x}Next`).toggleClass('noDisplay display');
 
         });
-}
+};
 
 function correctFunction(x) {
     $(`${x} .rightOption`).on('click', function () {
@@ -39,8 +52,9 @@ function correctFunction(x) {
         $(`${x} .answeredRight`).toggleClass('noDisplay display');
         $(`${x}Next`).toggleClass('noDisplay display');
     });
-}
+};
 
+// This Section for Brazil questionflow
 correctFunction('.saladQuestion');
 incorrectFunction('.saladQuestion');
 
@@ -58,31 +72,63 @@ $('.apitizerQuestionNext').on('click', function () {
 correctFunction('.meatQuestion');
 incorrectFunction('.meatQuestion');
 
+// This Section for India Flow
+correctFunction('.sauceQuestion');
+incorrectFunction('.sauceQuestion');
+
+$('.sauceQuestionNext').on('click', function () {
+    $('.utensilQuestion').toggleClass('noDisplay display');
+});
+
+correctFunction('.utensilQuestion');
+incorrectFunction('.utensilQuestion');
+
+$('.utensilQuestionNext').on('click', function () {
+    $('.dippingQuestion').toggleClass('noDisplay display');
+});
+
+correctFunction('.dippingQuestion');
+incorrectFunction('.dippingQuestion');
+
+// This Section for Vietnam Flow
+correctFunction('.flavourSauceQuestion');
+incorrectFunction('.flavourSauceQuestion');
+
+$('.flavourSauceQuestionNext').on('click', function () {
+    $('.basilQuestion').toggleClass('noDisplay display');
+});
+
+correctFunction('.basilQuestion');
+incorrectFunction('.basilQuestion');
+
+$('.basilQuestionNext').on('click', function () {
+    $('.spoonQuestion').toggleClass('noDisplay display');
+});
+
+correctFunction('.spoonQuestion');
+incorrectFunction('.spoonQuestion');
+
+// THis section for Japan Flow
+
+correctFunction('.riceQuestion');
+incorrectFunction('.riceQuestion');
+
+$('.riceQuestionNext').on('click', function () {
+    $('.wasabiQuestion').toggleClass('noDisplay display');
+});
+
+correctFunction('.wasabiQuestion');
+incorrectFunction('.wasabiQuestion');
+
+$('.wasabiQuestionNext').on('click', function () {
+    $('.soysauceQuestion').toggleClass('noDisplay display');
+});
+
+correctFunction('.soysaucQuestion');
+incorrectFunction('.soysauceQuestion');
+
+$('.soysauceQuestionNext').on('click', function () {
+    $('.gingerQuestion').toggleClass('noDisplay display');
+});
 
 
-
-// $('.saladQuestion .rightOption').on('click', function () {
-//     $('.saladQuestion .wrongOption').toggleClass('display noDisplay');
-//     $('.saladQuestion .answeredRight').toggleClass('noDisplay display');
-//     $('.saladNextQuestion').toggleClass('noDisplay display');
-
-// });
-
-// $('.saladNextQuestion').on('click', function(){
-//     $('.apitizerQuestion').toggleClass('noDisplay display');
-// });
-
-// $('.apitizerQuestion .wrongOption').on('click', function () {
-//     $('.apitizerQuestion .rightOption').toggleClass('display noDisplay');
-//     $('.apitizerQuestion .answeredWrong').toggleClass('noDisplay display');
-//     $('.answeredWrong').smoothScroll();
-//     $('.apitizerNextQuestion').toggleClass('noDisplay display');
-
-// });
-
-// $('.saladQuestion .rightOption').on('click', function () {
-//     $('.saladQuestion .wrongOption').toggleClass('display noDisplay');
-//     $('.saladQuestion .answeredRight').toggleClass('noDisplay display');
-//     $('.saladNextQuestion').toggleClass('noDisplay display');
-
-// });

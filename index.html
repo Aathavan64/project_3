@@ -11,9 +11,9 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700|Vidaloka" rel="stylesheet">
 </head>
 <body>
-    <section class="introPage noDisplay">
+    <section class="introPage display">
         <div class="mainQuestion">
-            <h1>Where would you like to travel to?</h1>
+            <h1>Where would you like to visit?</h1>
         </div>
         <div class="country">
             <div class="buttonHolder"><button class="japanButton">Japan</button></div>
@@ -42,7 +42,7 @@
             <div class="vietnamSelect grayScale"></div>
         </div>
     </section>
-    <section class="brazil Display">
+    <section class="brazil noDisplay">
         <main>
             <div class="wrapper saladQuestion">
                 <div class="dish">
@@ -107,7 +107,7 @@
             <button class="apitizerQuestionNext nextQuestion noDisplay">
                 <p>Next Question</p>
             </button>
-            <div class="wrapper meatQuestion">
+            <div class="wrapper meatQuestion noDisplay">
                 <div class="dish">
                     <img src="images/brazildish.png" alt="">
                 </div>
@@ -133,12 +133,12 @@
                     </div>
                 </div>
             </div>
-            <button class="meatQuestionNext nextQuestion noDisplay">
-                <p>Next Question</p>
-            </button>
         </main>
+        <button class="brazilBacktoHome">
+            <p>Go back Home</p>
+        </button>
     </section>
-    <section class="india">
+    <section class="india noDisplay">
         <main>
             <div class="wrapper sauceQuestion">
                 <div class="dish">
@@ -166,7 +166,10 @@
                     </div>
                 </div>
             </div>
-            <div class="wrapper utensilQuestion">
+            <button class="sauceQuestionNext nextQuestion noDisplay">
+                <p>Next Question</p>
+            </button>
+            <div class="wrapper utensilQuestion noDisplay">
                 <div class="dish">
                     <img src="images/brazildish.png" alt="">
                 </div>
@@ -193,7 +196,10 @@
                     </div>
                 </div>
             </div>
-            <div class="wrapper dippingQuestion">
+            <button class="utensilQuestionNext nextQuestion noDisplay">
+                <p>Next Question</p>
+            </button>
+            <div class="wrapper dippingQuestion noDisplay">
                 <div class="dish">
                     <img src="images/brazildish.png" alt="">
                 </div>
@@ -218,192 +224,220 @@
                 </div>
             </div>
         </main>
+        <button class="indiaBacktoHome">
+            <p>Go back Home</p>
+        </button>
     </section>
-    <section class="vietnam">
-        <div class="wrapper flavourSauceQuestion">
-            <div class="dish">
-                <img src="images/brazildish.png" alt="">
-            </div>
-            <div class="question">
-                <h2>When your Pho comes out we should definitely dump all the hoisin and Siracha sauce in it right?</h2>
-                <div class="initialOptions">
-                    <button class="wrongOption option display">
-                        <p>Wel yea? It gonna taste horrible if we dont?</p>
-                    </button>
-                    <button class="rightOption option display">
-                        <p>How about we just try the soup first</p>
-                    </button>
+    <section class="vietnam noDisplay">
+        <main>
+            <div class="wrapper flavourSauceQuestion">
+                <div class="dish">
+                    <img src="images/brazildish.png" alt="">
                 </div>
-                <div class="answeredRight noDisplay">
-                    <h3>Good!</h3>
-                    <p>The only way you will be able to tell if a Pho is good is by trying the broth. Take some with your soup spoon and taste it, it should have a deep bone broth taste. As well you should place your sauces in a seperate bowl on the side and dip your meats into there.</p>
-                </div>
-                <div class="answeredWrong noDisplay">
-                    <h3>-.-'</h3>
-                    <p>You will ruin the flavour of the sauce if you do that. Instead try to enjoy each one by themselves. Instead of putting your sauces directly in the bowl, place in a side dish, and dip the meat directly into it.</p>
-                </div>
-            </div>
-        </div>
-        <div class="wrapper basilQuestion">
-            <div class="dish">
-                <img src="images/brazildish.png" alt="">
-            </div>
-            <div class="question">
-                <h2>Now that you have tasted it, should you go nuts with </h2>
-                <div class="initialOptions">
-                    <button class="wrongOption option display">
-                        <p>Wel yea? It gonna taste horrible if we dont?</p>
-                    </button>
-                    <button class="rightOption option display">
-                        <p>How about we just try the soup first</p>
-                    </button>
-                </div>
-                <div class="answeredRight noDisplay">
-                    <h3>Good!</h3>
-                    <p>The only way you will be able to tell if a Pho is good is by trying the broth. Take some with your soup spoon
-                        and taste it, it should have a deep bone broth taste.</p>
-                </div>
-                <div class="answeredWrong noDisplay">
-                    <h3>-.-'</h3>
-                    <p>You will ruin the flavour of the sauce if you do that. Instead try to enjoy each one by themselves</p>
+                <div class="question">
+                    <h2>When your Pho comes out we should definitely dump all the hoisin and Siracha sauce in it right?</h2>
+                    <div class="initialOptions">
+                        <button class="wrongOption option display">
+                            <p>Wel yea? It gonna taste horrible if we dont?</p>
+                        </button>
+                        <button class="rightOption option display">
+                            <p>How about we just try the soup first</p>
+                        </button>
+                    </div>
+                    <div class="answeredRight noDisplay">
+                        <h3>Good!</h3>
+                        <p>The only way you will be able to tell if a Pho is good is by trying the broth. Take some with your soup spoon and taste it, it should have a deep bone broth taste. As well you should place your sauces in a seperate bowl on the side and dip your meats into there.</p>
+                    </div>
+                    <div class="answeredWrong noDisplay">
+                        <h3>-.-'</h3>
+                        <p>You will ruin the flavour of the sauce if you do that. Instead try to enjoy each one by themselves. Instead of putting your sauces directly in the bowl, place in a side dish, and dip the meat directly into it.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="wrapper spoonQuestion">
-            <div class="dish">
-                <img src="images/brazildish.png" alt="">
+            <button class="flavourSauceQuestionNext nextQuestion noDisplay">
+                <p>Next Question</p>
+            </button>
+            <div class="wrapper basilQuestion noDisplay">
+                <div class="dish">
+                    <img src="images/brazildish.png" alt="">
+                </div>
+                <div class="question">
+                    <h2>Now that you have tasted it, should you go nuts with </h2>
+                    <div class="initialOptions">
+                        <button class="wrongOption option display">
+                            <p>Wel yea? It gonna taste horrible if we dont?</p>
+                        </button>
+                        <button class="rightOption option display">
+                            <p>How about we just try the soup first</p>
+                        </button>
+                    </div>
+                    <div class="answeredRight noDisplay">
+                        <h3>Good!</h3>
+                        <p>The only way you will be able to tell if a Pho is good is by trying the broth. Take some with your soup spoon
+                            and taste it, it should have a deep bone broth taste.</p>
+                    </div>
+                    <div class="answeredWrong noDisplay">
+                        <h3>-.-'</h3>
+                        <p>You will ruin the flavour of the sauce if you do that. Instead try to enjoy each one by themselves</p>
+                    </div>
+                </div>
             </div>
-            <div class="question">
-                <h2>When your Pho comes out we should definitely dump all the hoisin and Siracha sauce in it right?</h2>
-                <div class="initialOptions">
-                    <button class="wrongOption option display">
-                        <p>Wel yea? It gonna taste horrible if we dont?</p>
-                    </button>
-                    <button class="rightOption option display">
-                        <p>How about we just try the soup first</p>
-                    </button>
+            <button class="basilQuestionNext nextQuestion noDisplay">
+                <p>Next Question</p>
+            </button>
+            <div class="wrapper spoonQuestion noDisplay">
+                <div class="dish">
+                    <img src="images/brazildish.png" alt="">
                 </div>
-                <div class="answeredRight noDisplay">
-                    <h3>Good!</h3>
-                    <p>The only way you will be able to tell if a Pho is good is by trying the broth. Take some with your soup spoon
-                        and taste it, it should have a deep bone broth taste. As well you should place your sauces in a seperate
-                        bowl on the side and dip your meats into there.</p>
-                </div>
-                <div class="answeredWrong noDisplay">
-                    <h3>-.-'</h3>
-                    <p>You will ruin the flavour of the sauce if you do that. Instead try to enjoy each one by themselves. Instead of
-                        putting your sauces directly in the bowl, place in a side dish, and dip the meat directly into it.</p>
+                <div class="question">
+                    <h2>When your Pho comes out we should definitely dump all the hoisin and Siracha sauce in it right?</h2>
+                    <div class="initialOptions">
+                        <button class="wrongOption option display">
+                            <p>Wel yea? It gonna taste horrible if we dont?</p>
+                        </button>
+                        <button class="rightOption option display">
+                            <p>How about we just try the soup first</p>
+                        </button>
+                    </div>
+                    <div class="answeredRight noDisplay">
+                        <h3>Good!</h3>
+                        <p>The only way you will be able to tell if a Pho is good is by trying the broth. Take some with your soup spoon
+                            and taste it, it should have a deep bone broth taste. As well you should place your sauces in a seperate
+                            bowl on the side and dip your meats into there.</p>
+                    </div>
+                    <div class="answeredWrong noDisplay">
+                        <h3>-.-'</h3>
+                        <p>You will ruin the flavour of the sauce if you do that. Instead try to enjoy each one by themselves. Instead of
+                            putting your sauces directly in the bowl, place in a side dish, and dip the meat directly into it.</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </main>
+        <button class="vietnamBacktoHome">
+            <p>Go back Home</p>
+        </button>
     </section>
-    <section class="japan">
-        <div class="wrapper riceQuestion">
-            <div class="dish">
-                <img src="images/brazildish.png" alt="">
-            </div>
-            <div class="question">
-                <h2>When your Pho comes out we should definitely dump all the hoisin and Siracha sauce in it right?</h2>
-                <div class="initialOptions">
-                    <button class="wrongOption option display">
-                        <p>Wel yea? It gonna taste horrible if we dont?</p>
-                    </button>
-                    <button class="rightOption option display">
-                        <p>How about we just try the soup first</p>
-                    </button>
+    <section class="japan noDisplay">
+        <main>
+            <div class="wrapper riceQuestion">
+                <div class="dish">
+                    <img src="images/brazildish.png" alt="">
                 </div>
-                <div class="answeredRight noDisplay">
-                    <h3>Good!</h3>
-                    <p>The only way you will be able to tell if a Pho is good is by trying the broth. Take some with your soup spoon
-                        and taste it, it should have a deep bone broth taste. As well you should place your sauces in a seperate
-                        bowl on the side and dip your meats into there.</p>
-                </div>
-                <div class="answeredWrong noDisplay">
-                    <h3>-.-'</h3>
-                    <p>You will ruin the flavour of the sauce if you do that. Instead try to enjoy each one by themselves. Instead
-                        of putting your sauces directly in the bowl, place in a side dish, and dip the meat directly into it.</p>
-                </div>
-            </div>
-        </div>
-        <div class="wrapper wasabiQuestion">
-            <div class="dish">
-                <img src="images/brazildish.png" alt="">
-            </div>
-            <div class="question">
-                <h2>Now that you have tasted it, should you go nuts with </h2>
-                <div class="initialOptions">
-                    <button class="wrongOption option display">
-                        <p>Wel yea? It gonna taste horrible if we dont?</p>
-                    </button>
-                    <button class="rightOption option display">
-                        <p>How about we just try the soup first</p>
-                    </button>
-                </div>
-                <div class="answeredRight noDisplay">
-                    <h3>Good!</h3>
-                    <p>The only way you will be able to tell if a Pho is good is by trying the broth. Take some with your soup spoon
-                        and taste it, it should have a deep bone broth taste.</p>
-                </div>
-                <div class="answeredWrong noDisplay">
-                    <h3>-.-'</h3>
-                    <p>You will ruin the flavour of the sauce if you do that. Instead try to enjoy each one by themselves</p>
+                <div class="question">
+                    <h2>When your Pho comes out we should definitely dump all the hoisin and Siracha sauce in it right?</h2>
+                    <div class="initialOptions">
+                        <button class="wrongOption option display">
+                            <p>Wel yea? It gonna taste horrible if we dont?</p>
+                        </button>
+                        <button class="rightOption option display">
+                            <p>How about we just try the soup first</p>
+                        </button>
+                    </div>
+                    <div class="answeredRight noDisplay">
+                        <h3>Good!</h3>
+                        <p>The only way you will be able to tell if a Pho is good is by trying the broth. Take some with your soup spoon
+                            and taste it, it should have a deep bone broth taste. As well you should place your sauces in a seperate
+                            bowl on the side and dip your meats into there.</p>
+                    </div>
+                    <div class="answeredWrong noDisplay">
+                        <h3>-.-'</h3>
+                        <p>You will ruin the flavour of the sauce if you do that. Instead try to enjoy each one by themselves. Instead
+                            of putting your sauces directly in the bowl, place in a side dish, and dip the meat directly into it.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="wrapper soysauceQuestion">
-            <div class="dish">
-                <img src="images/brazildish.png" alt="">
-            </div>
-            <div class="question">
-                <h2>When your Pho comes out we should definitely dump all the hoisin and Siracha sauce in it right?</h2>
-                <div class="initialOptions">
-                    <button class="wrongOption option display">
-                        <p>Wel yea? It gonna taste horrible if we dont?</p>
-                    </button>
-                    <button class="rightOption option display">
-                        <p>How about we just try the soup first</p>
-                    </button>
+            <button class="riceQuestionNext nextQuestion noDisplay">
+                <p>Next Question</p>
+            </button>
+            <div class="wrapper wasabiQuestion noDisplay">
+                <div class="dish">
+                    <img src="images/brazildish.png" alt="">
                 </div>
-                <div class="answeredRight noDisplay">
-                    <h3>Good!</h3>
-                    <p>The only way you will be able to tell if a Pho is good is by trying the broth. Take some with your soup spoon
-                        and taste it, it should have a deep bone broth taste. As well you should place your sauces in a seperate
-                        bowl on the side and dip your meats into there.</p>
-                </div>
-                <div class="answeredWrong noDisplay">
-                    <h3>-.-'</h3>
-                    <p>You will ruin the flavour of the sauce if you do that. Instead try to enjoy each one by themselves. Instead
-                        of putting your sauces directly in the bowl, place in a side dish, and dip the meat directly into it.</p>
-                </div>
-            </div>
-        </div>
-        <div class="wrapper gingerQuestion">
-            <div class="dish">
-                <img src="images/brazildish.png" alt="">
-            </div>
-            <div class="question">
-                <h2>When your Pho comes out we should definitely dump all the hoisin and Siracha sauce in it right?</h2>
-                <div class="initialOptions">
-                    <button class="wrongOption option display">
-                        <p>Wel yea? It gonna taste horrible if we dont?</p>
-                    </button>
-                    <button class="rightOption option display">
-                        <p>How about we just try the soup first</p>
-                    </button>
-                </div>
-                <div class="answeredRight noDisplay">
-                    <h3>Good!</h3>
-                    <p>The only way you will be able to tell if a Pho is good is by trying the broth. Take some with your soup spoon
-                        and taste it, it should have a deep bone broth taste. As well you should place your sauces in a seperate
-                        bowl on the side and dip your meats into there.</p>
-                </div>
-                <div class="answeredWrong noDisplay">
-                    <h3>-.-'</h3>
-                    <p>You will ruin the flavour of the sauce if you do that. Instead try to enjoy each one by themselves. Instead of
-                        putting your sauces directly in the bowl, place in a side dish, and dip the meat directly into it.</p>
+                <div class="question">
+                    <h2>Now that you have tasted it, should you go nuts with </h2>
+                    <div class="initialOptions">
+                        <button class="wrongOption option display">
+                            <p>Wel yea? It gonna taste horrible if we dont?</p>
+                        </button>
+                        <button class="rightOption option display">
+                            <p>How about we just try the soup first</p>
+                        </button>
+                    </div>
+                    <div class="answeredRight noDisplay">
+                        <h3>Good!</h3>
+                        <p>The only way you will be able to tell if a Pho is good is by trying the broth. Take some with your soup spoon
+                            and taste it, it should have a deep bone broth taste.</p>
+                    </div>
+                    <div class="answeredWrong noDisplay">
+                        <h3>-.-'</h3>
+                        <p>You will ruin the flavour of the sauce if you do that. Instead try to enjoy each one by themselves</p>
+                    </div>
                 </div>
             </div>
-        </div>
+            <button class="wasabiQuestionNext nextQuestion noDisplay">
+                <p>Next Question</p>
+            </button>
+            <div class="wrapper soysauceQuestion noDisplay">
+                <div class="dish">
+                    <img src="images/brazildish.png" alt="">
+                </div>
+                <div class="question">
+                    <h2>When your Pho comes out we should definitely dump all the hoisin and Siracha sauce in it right?</h2>
+                    <div class="initialOptions">
+                        <button class="wrongOption option display">
+                            <p>Wel yea? It gonna taste horrible if we dont?</p>
+                        </button>
+                        <button class="rightOption option display">
+                            <p>How about we just try the soup first</p>
+                        </button>
+                    </div>
+                    <div class="answeredRight noDisplay">
+                        <h3>Good!</h3>
+                        <p>The only way you will be able to tell if a Pho is good is by trying the broth. Take some with your soup spoon
+                            and taste it, it should have a deep bone broth taste. As well you should place your sauces in a seperate
+                            bowl on the side and dip your meats into there.</p>
+                    </div>
+                    <div class="answeredWrong noDisplay">
+                        <h3>-.-'</h3>
+                        <p>You will ruin the flavour of the sauce if you do that. Instead try to enjoy each one by themselves. Instead
+                            of putting your sauces directly in the bowl, place in a side dish, and dip the meat directly into it.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="soysauceQuestionNext nextQuestion noDisplay">
+                <p>Next Question</p>
+            </button>
+            <div class="wrapper gingerQuestion noDisplay">
+                <div class="dish">
+                    <img src="images/brazildish.png" alt="">
+                </div>
+                <div class="question">
+                    <h2>When your Pho comes out we should definitely dump all the hoisin and Siracha sauce in it right?</h2>
+                    <div class="initialOptions">
+                        <button class="wrongOption option display">
+                            <p>Wel yea? It gonna taste horrible if we dont?</p>
+                        </button>
+                        <button class="rightOption option display">
+                            <p>How about we just try the soup first</p>
+                        </button>
+                    </div>
+                    <div class="answeredRight noDisplay">
+                        <h3>Good!</h3>
+                        <p>The only way you will be able to tell if a Pho is good is by trying the broth. Take some with your soup spoon
+                            and taste it, it should have a deep bone broth taste. As well you should place your sauces in a seperate
+                            bowl on the side and dip your meats into there.</p>
+                    </div>
+                    <div class="answeredWrong noDisplay">
+                        <h3>-.-'</h3>
+                        <p>You will ruin the flavour of the sauce if you do that. Instead try to enjoy each one by themselves. Instead of
+                            putting your sauces directly in the bowl, place in a side dish, and dip the meat directly into it.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <button class="japanBacktoHome">
+            <p>Go back Home</p>
+        </button>
     </section>
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
     <script src="scripts/script.js"></script>

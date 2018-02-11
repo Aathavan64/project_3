@@ -1,0 +1,35 @@
+@media (max-width: 480px) {
+    body {
+    max-width: 450px;
+    margin: 0 auto;
+    }
+
+    .introPage {
+        flex-direction: column;
+    }
+    .country {
+        width: 100%;
+    }
+
+    .japan .wrapper,
+    .brazil .wrapper,
+    .india .wrapper,
+    .vietnam .wrapper {
+        max-width: 450px;
+        flex-direction: column;
+    }
+
+    .dish,
+    .question {
+        width: 100%;
+    }
+
+    .initialOptions {
+        width: 90%;
+    }
+    
+
+}
+        
+        
+        
