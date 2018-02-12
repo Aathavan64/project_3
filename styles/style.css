@@ -178,6 +178,9 @@ h1, h2, h3, h4, p {
 .answeredWrong {
   font-family: 'Playfair Display', serif; }
 
+body {
+  background-image: url("../images/brushed_alu.png"); }
+
 .introPage {
   display: -webkit-box;
   display: -ms-flexbox;
