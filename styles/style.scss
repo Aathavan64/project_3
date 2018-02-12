@@ -9,6 +9,7 @@
 @import "components/svgBackgrounds";
 @import "components/mediaQueryPhone";
 
+// Stated display here because I needed it to be stated last so it overwrites all previous display classes
 
 .noDisplay {
     display: none;

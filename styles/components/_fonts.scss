@@ -23,7 +23,7 @@ h1,h2,h3,h4, p {
 }
 
 .question h2 {
-    color: #663399;
+    color: #30d1f6;
 }
 
 .question h2 {
@@ -33,6 +33,22 @@ h1,h2,h3,h4, p {
 .wrongOption p
 .rightOption p {
     font-family: 'Quicksand', sans-serif;
+}
+
+.answeredWrong h3 {
+    color: maroon;
+    font-size: 2rem;
+}
+.answeredRight h3 {
+    color: green;
+    font-size: 2rem;
+}
+
+.answeredWrong p,
+.answeredRight p {
+    color: white;
+    letter-spacing: .5px;
+    word-spacing: 1px;
 }
 
 .answeredRight,

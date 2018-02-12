@@ -25,3 +25,11 @@
 .option{
     @include optionButtonStyling;
 }
+
+.nextQuestion {
+    @include nextQuestionStyling;
+}
+
+.brazilBacktoHome {
+    @include homeStyling;
+}

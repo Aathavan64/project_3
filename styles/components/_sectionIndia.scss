@@ -24,3 +24,11 @@
 .option{
     @include optionButtonStyling;
 }
+
+.nextQuestion {
+    @include nextQuestionStyling;
+}
+
+.indiaBacktoHome {
+    @include homeStyling;
+}

@@ -24,3 +24,7 @@
 .option{
     @include optionButtonStyling;
 }
+
+.vietnamBacktoHome {
+    @include homeStyling;
+}
